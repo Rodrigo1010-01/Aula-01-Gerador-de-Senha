@@ -2,7 +2,7 @@
 
 :root{
     --branco: #FFFFFF;
-    --cor-de-fundo: #0F0E17;        /* Azul escuro quase preto, muito mais moderno */
+    --cor-de-fundo: #a80b0b;        /* Azul escuro quase preto, muito mais moderno */
     --fundo-senha: #1E1B29;         /* Roxo acinzentado escuro para o bloco da senha */
     --fundo-texto: #161420;         /* Tom ligeiramente mais escuro para os blocos de texto */
     --borda: #6246EA;               /* Roxo vibrante/neon para as bordas e foco */
@@ -23,7 +23,7 @@ body{
 .titulo-principal{
     font-family: var(--roboto-mono);
     font-size: 32px;
-    color: #6246EA;                 /* Destaque no título principal */
+    color: #00e498;                 /* Destaque no título principal */
 }
 
 .titulo-secundario{
@@ -46,7 +46,7 @@ body{
 #campo-senha{
     background-color: var(--fundo-senha);
     border: none;
-    color: #00FFFF;                 /* Texto da senha em Ciano Neon para alto contraste */
+    color: #52e4e4;                 /* Texto da senha em Ciano Neon para alto contraste */
     font-family: var(--roboto-mono);
     font-size: 40px;
     width: 70%;
@@ -164,7 +164,7 @@ label{
     }
     
     .footer {
-        background-color: #0b0a10;  /* Footer combinando com o fundo escuro */
+        background-color: #dad7eb;  /* Footer combinando com o fundo escuro */
         color: #a8a8b3;
         text-align: center;
         padding: 25px 20px;
