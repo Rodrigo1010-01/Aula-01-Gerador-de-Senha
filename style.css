@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap');
 
 :root{
-    --branco: #FFFFFF;
-    --cor-de-fundo: #0d1117;        /* Alterado: Dark mode moderno (Grafite azulado escuro) */
-    --fundo-senha: #161b22;         /* Alterado: Tom ligeiramente mais claro para contraste */
-    --fundo-texto: #21262d;         /* Alterado: Cinza escuro para blocos de conteúdo */
-    --borda: #58a6ff;               /* Alterado: Azul brilhante/neon elegante para foco */
+    --branco: #ffffff;
+    --cor-de-fundo: #1a0d0d;
+    --fundo-senha: #2b1111;
+    --fundo-texto: #3d1717;
+    --borda: #dc2626;
     --roboto: 'Roboto', sans-serif;
     --roboto-mono: 'Roboto Mono', monospace;
 }
@@ -23,7 +23,6 @@ body{
 .titulo-principal{
     font-family: var(--roboto-mono);
     font-size: 32px;
-    color: #58a6ff;                 /* Alterado: Alinhado com o azul neon do tema */
 }
 
 .titulo-secundario{
@@ -40,13 +39,12 @@ body{
     background: var(--fundo-senha);
     padding: 24px;
     border-bottom: 6px solid var(--borda);
-    border-radius: 8px;             
 }
 
 #campo-senha{
     background-color: var(--fundo-senha);
     border: none;
-    color: #39ff14;                 /* Alterado: Verde Neon para excelente contraste e visibilidade */
+    color: var(--branco);
     font-family: var(--roboto-mono);
     font-size: 40px;
     width: 70%;
@@ -66,7 +64,6 @@ body{
     border: 2px solid var(--borda);
     margin-top: 32px;
     padding: 24px;
-    border-radius: 8px;
 }
 
 .parametro-titulo{
@@ -83,6 +80,7 @@ body{
     flex-direction: column;
     justify-content: center;
 }
+
 .parametro-senha{
     width: 50%;
     margin: 0 auto;
@@ -94,18 +92,12 @@ body{
 }
 
 .parametro-senha__botao{
-    background-color: var(--borda); 
+    background-color: var(--fundo-texto);
     color: var(--branco);
-    border: none;
+    border: 2px solid var(--borda);
     padding: 24px;
     font-size: 24px;
     cursor: pointer;
-    border-radius: 4px;
-    transition: background 0.2s;
-}
-
-.parametro-senha__botao:hover{
-    background-color: #1f6feb;     /* Alterado: Azul um pouco mais escuro para o hover */
 }
 
 .parametro-senha__texto{
@@ -114,7 +106,6 @@ body{
     border-bottom: 2px solid var(--borda);
     margin: 0;
     font-size: 24px;
-    background-color: #0d1117;     /* Alterado: Fundo escuro integrado */
 }
 
 label{
@@ -125,32 +116,33 @@ label{
     width: 20px;
     height: 20px;
     cursor: pointer;
-    accent-color: var(--borda);    
 }
 
 .barra{
-    background-color: #30363d;     /* Alterado: Fundo cinza neutro escuro para a barra */
+    background-color: var(--fundo-senha);
     height: 30px;
     width: 100%;
-    border-radius: 4px;
-    overflow: hidden;
 }
+
 .forca{
     height: 30px;
     position: relative;
     bottom: 30px;
 }
+
 .fraca{
     width: 25%;
-    background-color: #f85149;     /* Alterado: Vermelho suave e moderno */
+    background-color: #ef4444;
 }
+
 .media{
-    background-color: #d29922;     /* Alterado: Laranja/Amarelo sóbrio */
     width: 50%;
+    background-color: #f97316;
 }
+
 .forte{
-    background-color: #2ea043;     /* Alterado: Verde agradável */
     width: 100%;
+    background-color: #dc2626;
 }
 
 .parametro-senha-textos{
@@ -162,37 +154,37 @@ label{
     .parametro-coluna__senha{
         flex-direction: row;
     }
-    
-    .footer {
-        background-color: #161b22;  /* Alterado: Fundo consistente com a identidade escura */
-        color: #8b949e;            /* Alterado: Texto cinza suave */
-        text-align: center;
-        padding: 25px 20px;
-        margin-top: 40px;
-        border-top: 1px solid #30363d; /* Alterado: Borda sutil */
-        font-size: 0.9rem;
-    }
+}
 
-    .footer .container {
-        max-width: 800px;
-        margin: 0 auto;
-    }
+.footer{
+    background-color: #120909;
+    color: #fca5a5;
+    text-align: center;
+    padding: 25px 20px;
+    margin-top: 40px;
+    border-top: 1px solid #7f1d1d;
+    font-size: 0.9rem;
+}
 
-    .footer strong {
-        color: #fff;
-    }
+.footer .container{
+    max-width: 800px;
+    margin: 0 auto;
+}
 
-    .footer-links {
-        margin-top: 12px;
-    }
+.footer strong{
+    color: #ffffff;
+}
 
-    .footer-links a {
-        color: #58a6ff;            /* Alterado: Links em azul */
-        text-decoration: none;
-        transition: color 0.3s;
-    }
+.footer-links{
+    margin-top: 12px;
+}
 
-    .footer-links a:hover {
-        color: #39ff14;             /* Alterado: Hover mudando para o verde neon da senha */
-    }
+.footer-links a{
+    color: #f87171;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover{
+    color: #fecaca;
 }
